@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SSSACT — Shree Shiradi Sai Anathalaya Charitable Trust</title>
+<meta name="description" content="Shree Shiradi Sai Anathalaya Charitable Trust (R.) — a children's rehabilitation centre in Bengaluru providing shelter, education, food and care to underprivileged children since 2012. They need your hands.">
+
+<!-- ============================================================= -->
+<!-- GOOGLE ANALYTICS 4  (GA4)                                      -->
+<!-- STEP: Replace G-L9KDDB36NP below with YOUR Measurement ID.     -->
+<!-- You get this free from https://analytics.google.com           -->
+<!-- ============================================================= -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L9KDDB36NP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-L9KDDB36NP');
+</script>
+<!-- ============================================================= -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --indigo:#1f1a5e;        /* deep indigo from logo wordmark */
+    --indigo-soft:#3a3490;
+    --saffron:#f5a623;       /* warm saffron accent */
+    --saffron-deep:#e08a00;
+    --teal:#1b9aa0;          /* teal from logo hand */
+    --cream:#fbf7ef;         /* warm paper background */
+    --cream-2:#f3ecdd;
+    --ink:#2a2740;           /* body text */
+    --ink-soft:#5b5872;
+    --line:#e7ddc9;
+    --white:#ffffff;
+    --shadow:0 12px 40px rgba(31,26,94,.10);
+    --shadow-sm:0 4px 18px rgba(31,26,94,.08);
+    --radius:18px;
+    --radius-lg:28px;
+    --maxw:1140px;
+  }
+
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;scroll-padding-top:84px}
+  body{
+    font-family:'Inter',system-ui,sans-serif;
+    color:var(--ink);
+    background:var(--cream);
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{font-family:'Fraunces',Georgia,serif;line-height:1.12;color:var(--indigo);font-weight:600}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  .eyebrow{
+    font-family:'Inter',sans-serif;font-weight:600;font-size:.78rem;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--saffron-deep);
+    display:inline-block;margin-bottom:14px;
+  }
+  .btn{
+    display:inline-flex;align-items:center;gap:9px;
+    font-family:'Inter',sans-serif;font-weight:600;font-size:.95rem;
+    padding:14px 26px;border-radius:999px;cursor:pointer;border:none;
+    transition:transform .18s ease, box-shadow .18s ease, background .18s ease;
+  }
+  .btn-primary{background:var(--saffron);color:var(--indigo)}
+  .btn-primary:hover{background:var(--saffron-deep);color:#fff;transform:translateY(-2px);box-shadow:0 10px 24px rgba(224,138,0,.32)}
+  .btn-outline{background:transparent;color:var(--white);border:1.5px solid rgba(255,255,255,.55)}
+  .btn-outline:hover{background:rgba(255,255,255,.12);transform:translateY(-2px)}
+  .btn-ghost{background:var(--indigo);color:#fff}
+  .btn-ghost:hover{background:var(--indigo-soft);transform:translateY(-2px);box-shadow:0 10px 24px rgba(31,26,94,.28)}
+
+  /* ---------- TOP BAR ---------- */
+  .topbar{background:var(--indigo);color:#dcd8f5;font-size:.82rem}
+  .topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-top:9px;padding-bottom:9px;flex-wrap:wrap}
+  .topbar a{color:#dcd8f5;transition:color .15s}
+  .topbar a:hover{color:#fff}
+  .topbar .info{display:flex;gap:22px;flex-wrap:wrap}
+  .topbar .info span{display:inline-flex;align-items:center;gap:7px}
+
+  /* ---------- NAV ---------- */
+  header.nav{position:sticky;top:0;z-index:50;background:rgba(251,247,239,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .nav .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:12px;padding-bottom:12px;gap:18px}
+  .brand{display:flex;align-items:center;gap:13px}
+  .brand img{width:52px;height:52px;border-radius:12px;object-fit:cover;background:#fff;box-shadow:var(--shadow-sm)}
+  .brand .txt strong{display:block;font-family:'Fraunces',serif;font-size:1.18rem;color:var(--indigo);font-weight:700;letter-spacing:.02em}
+  .brand .txt small{display:block;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);font-weight:600;margin-top:1px}
+  nav.links{display:flex;align-items:center;gap:30px}
+  nav.links a{font-weight:500;font-size:.94rem;color:var(--ink);position:relative;padding:4px 0}
+  nav.links a::after{content:"";position:absolute;left:0;bottom:-2px;height:2px;width:0;background:var(--saffron);transition:width .22s ease}
+  nav.links a:hover{color:var(--indigo)}
+  nav.links a:hover::after{width:100%}
+  .nav-cta{display:flex;align-items:center;gap:14px}
+  .menu-btn{display:none;background:none;border:none;cursor:pointer;padding:8px}
+  .menu-btn span{display:block;width:24px;height:2px;background:var(--indigo);margin:5px 0;transition:.25s}
+
+  /* ---------- HERO ---------- */
+  .hero{position:relative;overflow:hidden;background:
+      radial-gradient(900px 500px at 85% -10%, rgba(245,166,35,.16), transparent 60%),
+      linear-gradient(160deg, #211b66 0%, #2c2585 55%, #1b9aa0 140%);
+    color:#fff;padding:84px 0 96px}
+  .hero::before{content:"";position:absolute;inset:0;opacity:.07;
+    background-image:radial-gradient(circle at 1px 1px, #fff 1px, transparent 0);background-size:26px 26px}
+  .hero .wrap{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:54px;align-items:center}
+  .hero .eyebrow{color:var(--saffron)}
+  .hero h1{color:#fff;font-size:clamp(2.4rem,5vw,3.7rem);font-weight:600;letter-spacing:-.01em}
+  .hero h1 em{font-style:italic;color:var(--saffron);font-weight:500}
+  .hero p.lead{font-size:1.12rem;color:#e6e3ff;margin:22px 0 30px;max-width:42ch}
+  .hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+  .hero-stats{display:flex;gap:34px;margin-top:42px;flex-wrap:wrap}
+  .hero-stats .s b{font-family:'Fraunces',serif;font-size:2rem;color:#fff;display:block;line-height:1}
+  .hero-stats .s span{font-size:.82rem;color:#c9c5f0;letter-spacing:.04em}
+  .hero-card{
+    background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);
+    border-radius:var(--radius-lg);padding:30px;backdrop-filter:blur(6px);
+  }
+  .hero-card img{width:108px;height:108px;border-radius:20px;background:#fff;padding:8px;margin:0 auto 18px;box-shadow:0 16px 40px rgba(0,0,0,.25)}
+  .hero-card h3{color:#fff;text-align:center;font-size:1.25rem;margin-bottom:6px}
+  .hero-card p{text-align:center;color:#d7d4f5;font-size:.92rem}
+  .hero-card .values{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:16px}
+  .hero-card .values span{font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;font-weight:600;
+    background:rgba(245,166,35,.18);color:var(--saffron);padding:5px 11px;border-radius:999px}
+
+  .wave{display:block;width:100%;height:auto;margin-top:-2px}
+
+  /* ---------- SECTION SHELL ---------- */
+  section{padding:88px 0}
+  .sec-head{max-width:680px;margin-bottom:50px}
+  .sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
+  .sec-head h2{font-size:clamp(2rem,3.6vw,2.7rem);margin-bottom:14px}
+  .sec-head p{color:var(--ink-soft);font-size:1.05rem}
+
+  /* ---------- ABOUT ---------- */
+  .about{background:var(--white)}
+  .about .grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+  .about .copy p{color:var(--ink-soft);margin-bottom:16px}
+  .about .copy p strong{color:var(--ink)}
+  .reg-badge{display:inline-flex;align-items:center;gap:10px;background:var(--cream-2);border:1px solid var(--line);
+    border-radius:12px;padding:10px 16px;font-size:.85rem;color:var(--indigo);font-weight:600;margin-top:8px}
+  .vm{display:grid;gap:20px}
+  .vm-card{background:var(--cream);border:1px solid var(--line);border-radius:var(--radius);padding:28px;
+    position:relative;transition:transform .2s ease, box-shadow .2s ease}
+  .vm-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+  .vm-card .ic{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;margin-bottom:14px;font-size:1.4rem}
+  .vm-card.vision .ic{background:rgba(27,154,160,.14)}
+  .vm-card.mission .ic{background:rgba(245,166,35,.18)}
+  .vm-card h3{font-size:1.3rem;margin-bottom:8px}
+  .vm-card p{color:var(--ink-soft);font-size:.97rem}
+
+  /* ---------- IMPACT STRIP ---------- */
+  .impact{background:linear-gradient(135deg,var(--indigo),var(--indigo-soft));color:#fff;padding:64px 0}
+  .impact .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;text-align:center}
+  .impact .it b{font-family:'Fraunces',serif;font-size:2.6rem;display:block;color:var(--saffron);line-height:1}
+  .impact .it span{font-size:.92rem;color:#d9d6f7;margin-top:8px;display:block}
+
+  /* ---------- PROGRAMS ---------- */
+  .programs{background:var(--cream)}
+  .prog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .prog{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:28px;
+    transition:transform .2s ease, box-shadow .2s ease;position:relative;overflow:hidden}
+  .prog::before{content:"";position:absolute;left:0;top:0;height:4px;width:100%;background:var(--saffron);transform:scaleX(0);transform-origin:left;transition:transform .25s ease}
+  .prog:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+  .prog:hover::before{transform:scaleX(1)}
+  .prog .ic{width:50px;height:50px;border-radius:13px;background:var(--cream-2);display:grid;place-items:center;font-size:1.5rem;margin-bottom:16px}
+  .prog h3{font-size:1.18rem;margin-bottom:8px}
+  .prog p{color:var(--ink-soft);font-size:.93rem}
+
+  /* ---------- ACTIVITIES (chips) ---------- */
+  .activities{background:var(--white)}
+  .chips{display:flex;flex-wrap:wrap;gap:12px;max-width:880px}
+  .chip{background:var(--cream);border:1px solid var(--line);border-radius:999px;padding:11px 20px;
+    font-size:.92rem;font-weight:500;color:var(--ink);display:inline-flex;align-items:center;gap:9px;
+    transition:all .18s ease}
+  .chip:hover{background:var(--indigo);color:#fff;border-color:var(--indigo);transform:translateY(-2px)}
+  .chip .dot{width:7px;height:7px;border-radius:50%;background:var(--saffron)}
+
+  /* ---------- DONATE ---------- */
+  .donate{background:
+      radial-gradient(700px 400px at 10% 10%, rgba(245,166,35,.12), transparent 55%),
+      var(--cream-2)}
+  .donate .grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+  .donate .copy h2{font-size:clamp(2rem,3.6vw,2.7rem);margin-bottom:14px}
+  .donate .copy p{color:var(--ink-soft);font-size:1.05rem;margin-bottom:20px}
+  .donate ul{list-style:none;margin:22px 0;display:grid;gap:12px}
+  .donate ul li{display:flex;gap:12px;align-items:flex-start;color:var(--ink);font-size:.98rem}
+  .donate ul li .tick{flex:none;width:22px;height:22px;border-radius:50%;background:var(--saffron);color:var(--indigo);
+    display:grid;place-items:center;font-size:.78rem;font-weight:700;margin-top:2px}
+  .pay-card{background:var(--white);border-radius:var(--radius-lg);box-shadow:var(--shadow);padding:34px;border:1px solid var(--line)}
+  .pay-card .bank{display:flex;align-items:center;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding-bottom:18px;margin-bottom:20px}
+  .pay-card .bank b{font-family:'Fraunces',serif;color:var(--indigo);font-size:1.15rem}
+  .pay-card .bank span{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);font-weight:600;background:rgba(27,154,160,.1);padding:5px 11px;border-radius:999px}
+  .qr{width:210px;height:210px;margin:0 auto 18px;border-radius:16px;background:#fff;border:1px solid var(--line);display:grid;place-items:center;overflow:hidden}
+  .qr svg{width:100%;height:100%}
+  .pay-row{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px dashed var(--line);font-size:.92rem}
+  .pay-row:last-child{border-bottom:none}
+  .pay-row span{color:var(--ink-soft)}
+  .pay-row b{color:var(--indigo);font-weight:600;text-align:right;word-break:break-word}
+  .pay-note{text-align:center;font-size:.8rem;color:var(--ink-soft);margin-top:16px}
+
+  /* ---------- CONTACT ---------- */
+  .contact{background:var(--indigo);color:#fff}
+  .contact .sec-head h2{color:#fff}
+  .contact .sec-head p{color:#c9c5f0}
+  .contact .grid{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+  .cinfo{display:grid;gap:22px}
+  .cinfo .row{display:flex;gap:16px;align-items:flex-start}
+  .cinfo .row .ic{flex:none;width:46px;height:46px;border-radius:12px;background:rgba(255,255,255,.08);display:grid;place-items:center;font-size:1.2rem}
+  .cinfo .row b{display:block;color:#fff;font-family:'Inter',sans-serif;font-weight:600;font-size:.95rem;margin-bottom:3px}
+  .cinfo .row p,.cinfo .row a{color:#c9c5f0;font-size:.94rem;line-height:1.5}
+  .cinfo .row a:hover{color:var(--saffron)}
+  .map-card{border-radius:var(--radius);overflow:hidden;border:1px solid rgba(255,255,255,.14);min-height:320px}
+  .map-card iframe{width:100%;height:100%;min-height:320px;border:0;filter:grayscale(.2)}
+
+  /* ---------- FOOTER ---------- */
+  footer.site{background:#15113f;color:#b6b2dd;padding:48px 0 26px;font-size:.9rem}
+  footer.site .grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;margin-bottom:34px}
+  footer.site .brand img{width:46px;height:46px}
+  footer.site .brand .txt strong{color:#fff;font-size:1.05rem}
+  footer.site h4{color:#fff;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:16px;font-family:'Inter',sans-serif;font-weight:600}
+  footer.site ul{list-style:none;display:grid;gap:9px}
+  footer.site ul a{color:#b6b2dd;transition:color .15s}
+  footer.site ul a:hover{color:var(--saffron)}
+  footer.site p.tag{margin-top:14px;color:#8e8abf;max-width:34ch;line-height:1.6}
+  .foot-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:20px;display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;font-size:.84rem;color:#8e8abf}
+
+  /* ---------- EVENTS CONDUCTED ---------- */
+  .events{background:var(--white)}
+  .events-list{display:grid;gap:28px}
+  .event-card{display:grid;grid-template-columns:1fr 1fr;gap:0;background:var(--cream);border:1px solid var(--line);
+    border-radius:var(--radius-lg);overflow:hidden;transition:transform .2s ease, box-shadow .2s ease}
+  .event-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+  .event-photo{position:relative;min-height:280px;overflow:hidden}
+  .event-photo img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;transition:transform .4s ease}
+  .event-card:hover .event-photo img{transform:scale(1.04)}
+  .event-info{padding:34px 36px;display:flex;flex-direction:column;justify-content:center}
+  .event-info .tag{display:inline-block;align-self:flex-start;font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;
+    font-weight:600;color:var(--saffron-deep);background:rgba(245,166,35,.14);padding:6px 13px;border-radius:999px;margin-bottom:14px}
+  .event-info h3{font-size:1.4rem;margin-bottom:10px}
+  .event-info p{color:var(--ink-soft);font-size:.98rem;margin-bottom:14px;line-height:1.6}
+  .event-info .meta{font-size:.86rem;color:var(--teal);font-weight:600}
+  .event-card.reverse .event-photo{order:2}
+  .event-card.reverse .event-info{order:1}
+
+  /* ---------- GALLERY ---------- */
+  .gallery{background:var(--cream)}
+  .gal-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  .gal-item{padding:0;border:none;cursor:pointer;border-radius:14px;overflow:hidden;background:var(--cream-2);
+    aspect-ratio:1/1;position:relative;box-shadow:var(--shadow-sm)}
+  .gal-item img{width:100%;height:100%;object-fit:cover;transition:transform .35s ease, filter .35s ease;display:block}
+  .gal-item::after{content:"🔍";position:absolute;inset:0;display:grid;place-items:center;font-size:1.5rem;
+    background:rgba(31,26,94,.42);opacity:0;transition:opacity .25s ease}
+  .gal-item:hover img{transform:scale(1.08)}
+  .gal-item:hover::after{opacity:1}
+  .gal-item:focus-visible{outline:3px solid var(--saffron);outline-offset:2px}
+
+  /* ---------- LIGHTBOX ---------- */
+  .lightbox{position:fixed;inset:0;z-index:100;background:rgba(15,12,45,.92);display:none;
+    align-items:center;justify-content:center;padding:24px;backdrop-filter:blur(4px)}
+  .lightbox.open{display:flex}
+  .lb-img{max-width:90vw;max-height:86vh;border-radius:12px;box-shadow:0 24px 70px rgba(0,0,0,.5);animation:lbin .25s ease}
+  @keyframes lbin{from{opacity:0;transform:scale(.96)}to{opacity:1;transform:none}}
+  .lb-close{position:absolute;top:20px;right:26px;background:none;border:none;color:#fff;font-size:2.6rem;
+    line-height:1;cursor:pointer;opacity:.85;transition:opacity .15s}
+  .lb-close:hover{opacity:1}
+  .lb-nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.12);border:none;
+    color:#fff;font-size:2.4rem;width:56px;height:56px;border-radius:50%;cursor:pointer;display:grid;place-items:center;
+    transition:background .18s ease}
+  .lb-nav:hover{background:rgba(255,255,255,.24)}
+  .lb-prev{left:18px}
+  .lb-next{right:18px}
+
+  /* ---------- VOLUNTEER ---------- */
+  .volunteer{background:
+      radial-gradient(700px 420px at 90% 0%, rgba(27,154,160,.12), transparent 55%),
+      var(--cream)}
+  .volunteer .grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:48px;align-items:start}
+  .vol-copy h2{font-size:clamp(2rem,3.6vw,2.7rem);margin-bottom:14px}
+  .vol-copy p{color:var(--ink-soft);font-size:1.05rem;margin-bottom:20px}
+  .vol-ways{display:grid;gap:14px;margin-top:8px}
+  .vol-way{display:flex;gap:14px;align-items:flex-start}
+  .vol-way .ic{flex:none;width:42px;height:42px;border-radius:11px;background:var(--cream-2);display:grid;place-items:center;font-size:1.2rem}
+  .vol-way b{display:block;color:var(--indigo);font-family:'Inter',sans-serif;font-weight:600;font-size:.96rem;margin-bottom:2px}
+  .vol-way span{color:var(--ink-soft);font-size:.9rem}
+
+  .form-card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius-lg);
+    box-shadow:var(--shadow);padding:32px}
+  .form-card h3{font-size:1.35rem;margin-bottom:6px}
+  .form-card .sub{color:var(--ink-soft);font-size:.92rem;margin-bottom:22px}
+  .field{margin-bottom:16px}
+  .field label{display:block;font-size:.84rem;font-weight:600;color:var(--ink);margin-bottom:6px}
+  .field label .req{color:var(--saffron-deep)}
+  .field input,.field select,.field textarea{
+    width:100%;font-family:'Inter',sans-serif;font-size:.95rem;color:var(--ink);
+    background:var(--cream);border:1.5px solid var(--line);border-radius:11px;padding:12px 14px;
+    transition:border-color .15s ease, box-shadow .15s ease}
+  .field input:focus,.field select:focus,.field textarea:focus{
+    outline:none;border-color:var(--teal);box-shadow:0 0 0 3px rgba(27,154,160,.14)}
+  .field textarea{resize:vertical;min-height:96px}
+  .field-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .form-card .btn{width:100%;justify-content:center;margin-top:6px}
+  .form-note{font-size:.78rem;color:var(--ink-soft);text-align:center;margin-top:14px;line-height:1.5}
+  .form-status{display:none;border-radius:11px;padding:12px 14px;font-size:.9rem;margin-bottom:16px;font-weight:500}
+  .form-status.show{display:block}
+  .form-status.ok{background:rgba(74,222,128,.14);color:#15803d;border:1px solid rgba(74,222,128,.4)}
+  .form-status.err{background:rgba(239,68,68,.1);color:#b91c1c;border:1px solid rgba(239,68,68,.35)}
+
+  /* ---------- REVIEWS ---------- */
+  .reviews{background:var(--white)}
+  .rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:44px}
+  .rev{background:var(--cream);border:1px solid var(--line);border-radius:var(--radius);padding:26px;
+    display:flex;flex-direction:column;transition:transform .2s ease, box-shadow .2s ease}
+  .rev:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+  .rev .stars{color:var(--saffron);font-size:1rem;letter-spacing:2px;margin-bottom:12px}
+  .rev p{color:var(--ink);font-size:.95rem;line-height:1.6;flex:1}
+  .rev .who{display:flex;align-items:center;gap:12px;margin-top:18px}
+  .rev .who .av{width:42px;height:42px;border-radius:50%;background:var(--indigo);color:#fff;
+    display:grid;place-items:center;font-family:'Fraunces',serif;font-weight:700;font-size:1.05rem}
+  .rev .who b{display:block;color:var(--indigo);font-family:'Inter',sans-serif;font-weight:600;font-size:.92rem}
+  .rev .who span{color:var(--ink-soft);font-size:.8rem}
+  .rev-cta{max-width:560px;margin:0 auto;text-align:center}
+
+  /* ---------- VISITOR COUNTER ---------- */
+  .visitor{display:inline-flex;align-items:center;gap:9px;background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.12);border-radius:999px;padding:7px 15px;color:#d9d6f7;font-size:.84rem}
+  .visitor b{color:var(--saffron);font-weight:700;font-variant-numeric:tabular-nums}
+  .visitor .pulse{width:8px;height:8px;border-radius:50%;background:#4ade80;box-shadow:0 0 0 0 rgba(74,222,128,.6);animation:pulse 2s infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(74,222,128,.55)}70%{box-shadow:0 0 0 9px rgba(74,222,128,0)}100%{box-shadow:0 0 0 0 rgba(74,222,128,0)}}
+
+  /* ---------- REVEAL ANIM ---------- */
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease, transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){
+    .reveal{opacity:1;transform:none;transition:none}
+    html{scroll-behavior:auto}
+    .pulse{animation:none}
+  }
+
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width:980px){
+    .hero .wrap{grid-template-columns:1fr;gap:38px}
+    .hero-card{max-width:420px}
+    .about .grid,.donate .grid,.contact .grid{grid-template-columns:1fr;gap:38px}
+    .impact .grid{grid-template-columns:repeat(2,1fr);gap:32px}
+    .prog-grid{grid-template-columns:1fr 1fr}
+    footer.site .grid{grid-template-columns:1fr 1fr}
+    .rev-grid{grid-template-columns:1fr 1fr}
+    .gal-grid{grid-template-columns:repeat(3,1fr)}
+    .volunteer .grid{grid-template-columns:1fr;gap:38px}
+    .event-card,.event-card.reverse{grid-template-columns:1fr}
+    .event-card .event-photo,.event-card.reverse .event-photo{order:1;min-height:220px;position:relative}
+    .event-card .event-info,.event-card.reverse .event-info{order:2}
+    .event-photo img{position:relative}
+  }
+  @media (max-width:640px){
+    section{padding:60px 0}
+    .topbar .info{gap:14px;font-size:.76rem}
+    nav.links{display:none;position:absolute;top:100%;left:0;right:0;background:var(--cream);
+      flex-direction:column;align-items:flex-start;padding:18px 24px;gap:16px;border-bottom:1px solid var(--line);box-shadow:var(--shadow-sm)}
+    nav.links.open{display:flex}
+    .menu-btn{display:block}
+    .nav-cta .btn-ghost{display:none}
+    .prog-grid{grid-template-columns:1fr}
+    .impact .grid{grid-template-columns:1fr 1fr;gap:26px}
+    footer.site .grid{grid-template-columns:1fr}
+    .hero-stats{gap:24px}
+    .rev-grid{grid-template-columns:1fr}
+    .gal-grid{grid-template-columns:repeat(2,1fr);gap:10px}
+    .field-row{grid-template-columns:1fr}
+    .event-info{padding:26px 24px}
+    .lb-nav{width:44px;height:44px;font-size:1.8rem}
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== TOP BAR ===== -->
+<div class="topbar">
+  <div class="wrap">
+    <div class="info">
+      <span>📞 <a href="tel:+910000000000">Call the Ashrama</a></span>
+      <span>✉️ <a href="mailto:sssactb@gmail.com">sssactb@gmail.com</a></span>
+    </div>
+    <div class="info">
+      <span>🕉️ Om Sai Ram</span>
+      <span>Regd. No. 4-0002-2012/13</span>
+    </div>
+  </div>
+</div>
+
+<!-- ===== NAV ===== -->
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#home" aria-label="SSSACT home">
+      <img src="logo.jpeg" alt="SSSACT logo">
+      <span class="txt">
+        <strong>SSSACT</strong>
+        <small>Children's Rehabilitation Centre</small>
+      </span>
+    </a>
+    <nav class="links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#programs">Programs</a>
+      <a href="#events">Events</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#volunteer">Volunteer</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#donate">Donate</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="#donate" class="btn btn-ghost">Donate Now</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="home" style="padding-bottom:120px">
+  <div class="wrap">
+    <div class="reveal in">
+      <span class="eyebrow">Serve · Education · Culture · Shelter</span>
+      <h1>They need <em>your hands</em> to carve out a brighter future.</h1>
+      <p class="lead">Shree Shiradi Sai Anathalaya Charitable Trust is a children's rehabilitation centre in Bengaluru. Since 2012 we have given underprivileged children love, care, shelter, food and education — so every child can stand on their own and grow into a good citizen.</p>
+      <div class="hero-actions">
+        <a href="#donate" class="btn btn-primary">Donate Now →</a>
+        <a href="#about" class="btn btn-outline">Learn About Us</a>
+      </div>
+      <div class="hero-stats">
+        <div class="s"><b>2012</b><span>Serving since</span></div>
+        <div class="s"><b>5→Many</b><span>Children, and growing</span></div>
+        <div class="s"><b>20+</b><span>Active programmes</span></div>
+      </div>
+    </div>
+    <aside class="hero-card reveal in">
+      <img src="logo.jpeg" alt="SSSACT logo">
+      <h3>Shree Shiradi Sai Anathalaya</h3>
+      <p>Charitable Trust (R.) — a registered trust caring for children in Nagasandra, Bengaluru.</p>
+      <div class="values">
+        <span>Serve</span><span>Education</span><span>Culture</span><span>Shelter</span>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- decorative wave -->
+<svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" style="margin-top:-80px;position:relative;z-index:2" aria-hidden="true">
+  <path fill="#ffffff" d="M0,48 C240,80 480,80 720,56 C960,32 1200,16 1440,40 L1440,80 L0,80 Z"></path>
+</svg>
+
+<!-- ===== ABOUT ===== -->
+<section class="about" id="about" style="padding-top:40px">
+  <div class="wrap">
+    <div class="grid">
+      <div class="copy reveal">
+        <span class="eyebrow">About Us</span>
+        <h2 style="font-size:clamp(1.9rem,3.4vw,2.5rem);margin-bottom:16px">A home that started with just five children</h2>
+        <p>It started in 2012 with just <strong>5 children</strong>. With persistent effort and hard work, our team is able to provide not only shelter, food and education to underprivileged children, tribal kids and child labourers — but also a carved-out home where these blossoming buds are given enough love and care to feel emotionally, physically and economically secure.</p>
+        <p>To meet the demand of the place, the team goes door-to-door and collects donations. We are trying to carve out a disciplined lifestyle in children. <strong>Kindly visit the Ashrama</strong> to see the brightness in these children.</p>
+        <div class="reg-badge">🛡️ Registered Trust · Regd. No. 4-0002-2012/13</div>
+      </div>
+      <div class="vm reveal" id="vision">
+        <div class="vm-card vision">
+          <div class="ic">🌅</div>
+          <h3>Our Vision</h3>
+          <p>A society where the old aged live in comfort and dignity in the last phase of life, and children get love, care and guidance which makes each of them a good human being — empowering distressed women and working to build a healthy, hunger-free world.</p>
+        </div>
+        <div class="vm-card mission">
+          <div class="ic">🎯</div>
+          <h3>Our Mission</h3>
+          <p>To make our little kids stand on their own and become good citizens for our nation.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== IMPACT STRIP ===== -->
+<section class="impact" style="padding:56px 0">
+  <div class="wrap">
+    <div class="grid">
+      <div class="it reveal"><b>2012</b><span>Caring since</span></div>
+      <div class="it reveal"><b>Shelter</b><span>Safe home for children</span></div>
+      <div class="it reveal"><b>Education</b><span>School &amp; higher studies</span></div>
+      <div class="it reveal"><b>Care</b><span>Food, health &amp; love</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROGRAMS ===== -->
+<section class="programs" id="programs">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">What We Do</span>
+      <h2>Building hope, creating lasting change</h2>
+      <p>Our core programmes reach children, women and communities — building a healthier, more dignified future for everyone we serve.</p>
+    </div>
+    <div class="prog-grid">
+      <div class="prog reveal"><div class="ic">🏠</div><h3>Hostel for Children</h3><p>A safe, nurturing home with food, shelter and a disciplined, caring environment for underprivileged children.</p></div>
+      <div class="prog reveal"><div class="ic">📚</div><h3>Education</h3><p>Primary, middle and high schooling for children, plus assistance for girls to pursue higher education.</p></div>
+      <div class="prog reveal"><div class="ic">👩‍🍳</div><h3>Women Empowerment</h3><p>Income-generating activities, entrepreneur development, awareness and home-products training for women.</p></div>
+      <div class="prog reveal"><div class="ic">🩺</div><h3>Medical Camps</h3><p>Health camps and medical assistance, including support for the physically challenged.</p></div>
+      <div class="prog reveal"><div class="ic">🌱</div><h3>Environment &amp; Farming</h3><p>Organic farming awareness and environmental programmes for a greener, healthier future.</p></div>
+      <div class="prog reveal"><div class="ic">🤝</div><h3>Community &amp; Relief</h3><p>Rural development, self-help groups, legal aid, flood relief and support during natural calamities.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ACTIVITIES ===== -->
+<section class="activities" id="activities">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Present Activities</span>
+      <h2>The work we carry out, every day</h2>
+      <p>A snapshot of the ongoing activities of the organisation across education, welfare and community service.</p>
+    </div>
+    <div class="chips reveal">
+      <span class="chip"><span class="dot"></span>Hostel for children</span>
+      <span class="chip"><span class="dot"></span>Primary, middle &amp; high school</span>
+      <span class="chip"><span class="dot"></span>Income generating activities</span>
+      <span class="chip"><span class="dot"></span>Women entrepreneur awareness</span>
+      <span class="chip"><span class="dot"></span>Women entrepreneur development</span>
+      <span class="chip"><span class="dot"></span>Home products training</span>
+      <span class="chip"><span class="dot"></span>Formation of self-help groups</span>
+      <span class="chip"><span class="dot"></span>Rural development</span>
+      <span class="chip"><span class="dot"></span>Community services</span>
+      <span class="chip"><span class="dot"></span>Action against anti-social issues</span>
+      <span class="chip"><span class="dot"></span>Help for victims of natural calamities</span>
+      <span class="chip"><span class="dot"></span>Legal aid programmes</span>
+      <span class="chip"><span class="dot"></span>Assistance for girls' higher education</span>
+      <span class="chip"><span class="dot"></span>Medical camps</span>
+      <span class="chip"><span class="dot"></span>Assistance to physically challenged</span>
+      <span class="chip"><span class="dot"></span>Cultural activities</span>
+      <span class="chip"><span class="dot"></span>Celebrating national festivals</span>
+      <span class="chip"><span class="dot"></span>Organic farming awareness</span>
+      <span class="chip"><span class="dot"></span>World environmental awareness</span>
+      <span class="chip"><span class="dot"></span>Support for flood-affected people</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EVENTS CONDUCTED ===== -->
+<!-- =================================================================== -->
+<!--  HOW TO ADD AN EVENT:                                                -->
+<!--  Copy one <article class="event-card">...</article> block below,     -->
+<!--  paste it into .events-list, then edit the photo (src), title,       -->
+<!--  date and description. Put new photos in the images/ folder.         -->
+<!-- =================================================================== -->
+<section class="events" id="events">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Events Conducted</span>
+      <h2>Moments from our journey</h2>
+      <p>A look back at the celebrations, trips, awareness drives and community programmes our children and volunteers have been part of.</p>
+    </div>
+
+    <div class="events-list">
+
+      <article class="event-card reveal">
+        <div class="event-photo">
+          <img src="images/event1-kannada-1.jpg" alt="Kannada Rajyotsava celebration" loading="lazy">
+        </div>
+        <div class="event-info">
+          <span class="tag">🎉 Cultural Celebration</span>
+          <h3>Kannada Rajyotsava</h3>
+          <p>Our children celebrated Karnataka's formation day with pride — carrying flags, offering prayers and honouring the culture and spirit of the state together as one family.</p>
+          <span class="meta">📍 Nagasandra, Bengaluru</span>
+        </div>
+      </article>
+
+      <article class="event-card reveal reverse">
+        <div class="event-photo">
+          <img src="images/event2-trip-1.jpg" alt="Children on their yearly one-day trip" loading="lazy">
+        </div>
+        <div class="event-info">
+          <span class="tag">🚌 Annual Outing</span>
+          <h3>Yearly One-Day Trip</h3>
+          <p>Every year the children enjoy a special day out — exploring historic forts and temples, taking in new sights, and making joyful memories beyond the Ashrama.</p>
+          <span class="meta">📍 Chitradurga &amp; surroundings</span>
+        </div>
+      </article>
+
+      <article class="event-card reveal">
+        <div class="event-photo">
+          <img src="images/event3-adoption-1.jpg" alt="Child adoption awareness programme" loading="lazy">
+        </div>
+        <div class="event-info">
+          <span class="tag">📢 Awareness Drive</span>
+          <h3>Child Adoption Awareness Programme</h3>
+          <p>Together with student volunteers, we spread awareness about legal child adoption and the 1098 child helpline — reaching out to the public through posters and street outreach.</p>
+          <span class="meta">📍 Community outreach, Bengaluru</span>
+        </div>
+      </article>
+
+      <article class="event-card reveal reverse">
+        <div class="event-photo">
+          <img src="images/event4-aids-1.jpg" alt="World AIDS Day awareness programme" loading="lazy">
+        </div>
+        <div class="event-info">
+          <span class="tag">🎗️ Health Awareness</span>
+          <h3>World AIDS Awareness Programme</h3>
+          <p>Volunteers and students came together for a World AIDS Day drive — raising awareness through posters, a human-chain formation and public engagement across the neighbourhood.</p>
+          <span class="meta">📍 Nagasandra &amp; nearby areas</span>
+        </div>
+      </article>
+
+      <article class="event-card reveal reverse">
+        <div class="event-photo">
+          <img src="images/event5-science-1.jpg" alt="Children presenting science exhibition models" loading="lazy">
+        </div>
+        <div class="event-info">
+          <span class="tag">🔬 Learning &amp; Innovation</span>
+          <h3>Science Exhibition</h3>
+          <p>Our children showcased their creativity and curiosity at a science innovation exhibition — building working models on themes like renewable energy, human evolution and saving the earth.</p>
+          <span class="meta">📍 School science fair</span>
+        </div>
+      </article>
+
+      <article class="event-card reveal">
+        <div class="event-photo">
+          <img src="images/event6-yoga-1.jpg" alt="Children practising yoga together" loading="lazy">
+        </div>
+        <div class="event-info">
+          <span class="tag">🧘 Health &amp; Wellness</span>
+          <h3>Yoga Day</h3>
+          <p>The children came together for a yoga session — practising postures, balance and breathing to build strength, discipline and calm as part of their daily wellbeing.</p>
+          <span class="meta">📍 SSSACT grounds, Bengaluru</span>
+        </div>
+      </article>
+
+      <article class="event-card reveal reverse">
+        <div class="event-photo">
+          <img src="images/event7-art-1.jpg" alt="Children with their drawings at an art activity" loading="lazy">
+        </div>
+        <div class="event-info">
+          <span class="tag">🎨 Creativity</span>
+          <h3>Art &amp; Drawing Activity</h3>
+          <p>A day of creativity and inspiration — the children visited an art space and proudly displayed their own drawings, nurturing imagination and self-expression.</p>
+          <span class="meta">📍 Art museum visit, Bengaluru</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== VOLUNTEER ===== -->
+<section class="volunteer" id="volunteer">
+  <div class="wrap">
+    <div class="grid">
+      <div class="vol-copy reveal">
+        <span class="eyebrow">Join Us</span>
+        <h2>Lend your hands, change a life</h2>
+        <p>We believe small actions lead to big changes. Whether you can give time, skills or care, there's a place for you at SSSACT. Fill in the form and our team will reach out to you.</p>
+        <div class="vol-ways">
+          <div class="vol-way"><div class="ic">📚</div><div><b>Teach &amp; mentor</b><span>Help children with studies, reading, art or activities.</span></div></div>
+          <div class="vol-way"><div class="ic">🍲</div><div><b>Serve at the Ashrama</b><span>Assist with meals, events, festivals and daily care.</span></div></div>
+          <div class="vol-way"><div class="ic">🩺</div><div><b>Share a skill</b><span>Doctors, trainers, counsellors and professionals welcome.</span></div></div>
+          <div class="vol-way"><div class="ic">📣</div><div><b>Spread the word</b><span>Help with outreach, fundraising and social media.</span></div></div>
+        </div>
+      </div>
+
+      <!-- ============================================================= -->
+      <!--  VOLUNTEER FORM — delivers to sssactb@gmail.com via Formspree -->
+      <!--  SETUP: see SETUP-GUIDE.md "Connecting the forms" section.    -->
+      <!--  Replace YOUR_FORM_ID in the action URL with your real ID.    -->
+      <!-- ============================================================= -->
+      <div class="form-card reveal">
+        <h3>Become a volunteer</h3>
+        <p class="sub">Tell us a little about yourself and how you'd like to help.</p>
+        <div class="form-status" id="volStatus"></div>
+        <form id="volForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <input type="hidden" name="_subject" value="New volunteer sign-up — SSSACT website">
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+          <div class="field-row">
+            <div class="field">
+              <label>Full name <span class="req">*</span></label>
+              <input type="text" name="name" required placeholder="Your name">
+            </div>
+            <div class="field">
+              <label>Phone <span class="req">*</span></label>
+              <input type="tel" name="phone" required placeholder="10-digit mobile">
+            </div>
+          </div>
+          <div class="field">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="you@example.com">
+          </div>
+          <div class="field">
+            <label>How would you like to help?</label>
+            <select name="interest">
+              <option>Teach &amp; mentor children</option>
+              <option>Serve at the Ashrama / events</option>
+              <option>Share a professional skill</option>
+              <option>Outreach &amp; fundraising</option>
+              <option>Wherever I'm needed</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>A short message (optional)</label>
+            <textarea name="message" placeholder="Tell us about your availability or what you'd like to do…"></textarea>
+          </div>
+          <button type="submit" class="btn btn-ghost">Submit my details →</button>
+          <p class="form-note">Your details go straight to the SSSACT team. We'll contact you soon. 🙏</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== REVIEWS ===== -->
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">Reviews &amp; Testimonials</span>
+      <h2>Words from those who've visited</h2>
+      <p>Stories from volunteers, donors and visitors who've spent time with our children. We'd love to hear yours too.</p>
+    </div>
+
+    <!-- =================================================================== -->
+    <!--  TO ADD A REVIEW: copy one <div class="rev">…</div> block, paste it  -->
+    <!--  into .rev-grid, and edit the stars, text, name and role. Reviews    -->
+    <!--  submitted through the form below arrive by email for you to add.    -->
+    <!-- =================================================================== -->
+    <div class="rev-grid">
+      <div class="rev reveal">
+        <div class="stars">★★★★★</div>
+        <p>A wonderful place doing real work for children who need it most. Spending a day here with the kids was humbling and joyful. Highly recommend supporting them.</p>
+        <div class="who"><div class="av">R</div><div><b>A Volunteer</b><span>Visited the Ashrama</span></div></div>
+      </div>
+      <div class="rev reveal">
+        <div class="stars">★★★★★</div>
+        <p>Well-managed and full of warmth even with limited space. You can see the care that goes into every child. Happy to have donated and will do so again.</p>
+        <div class="who"><div class="av">D</div><div><b>A Donor</b><span>Supporter of SSSACT</span></div></div>
+      </div>
+      <div class="rev reveal">
+        <div class="stars">★★★★★</div>
+        <p>The children are bright, disciplined and full of life. The team's dedication since 2012 shows. A genuine cause worth standing behind.</p>
+        <div class="who"><div class="av">S</div><div><b>A Well-wisher</b><span>Community member</span></div></div>
+      </div>
+    </div>
+
+    <!-- ============================================================= -->
+    <!--  REVIEW FORM — delivers to sssactb@gmail.com via Formspree    -->
+    <!--  Replace YOUR_FORM_ID with your real Formspree ID (see guide).-->
+    <!-- ============================================================= -->
+    <div class="rev-cta">
+      <div class="form-card reveal" style="text-align:left">
+        <h3 style="text-align:center">Leave a review</h3>
+        <p class="sub" style="text-align:center">Share your experience with SSSACT. Approved reviews may appear on this page.</p>
+        <div class="form-status" id="revStatus"></div>
+        <form id="revForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <input type="hidden" name="_subject" value="New review — SSSACT website">
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+          <div class="field-row">
+            <div class="field">
+              <label>Your name <span class="req">*</span></label>
+              <input type="text" name="name" required placeholder="Your name">
+            </div>
+            <div class="field">
+              <label>Rating <span class="req">*</span></label>
+              <select name="rating" required>
+                <option value="★★★★★ (5/5)">★★★★★ — Excellent</option>
+                <option value="★★★★☆ (4/5)">★★★★☆ — Very good</option>
+                <option value="★★★☆☆ (3/5)">★★★☆☆ — Good</option>
+                <option value="★★☆☆☆ (2/5)">★★☆☆☆ — Fair</option>
+                <option value="★☆☆☆☆ (1/5)">★☆☆☆☆ — Poor</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label>Your review <span class="req">*</span></label>
+            <textarea name="review" required placeholder="What was your experience like?"></textarea>
+          </div>
+          <button type="submit" class="btn btn-ghost">Submit review →</button>
+          <p class="form-note">Thank you for sharing! Your review goes to the SSSACT team. 🙏</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALLERY ===== -->
+<!-- =================================================================== -->
+<!--  TO ADD A PHOTO: drop the image file into the images/ folder, then   -->
+<!--  copy one <button class="gal-item">…</button> block below and update  -->
+<!--  the src and alt. The lightbox works automatically.                  -->
+<!-- =================================================================== -->
+<section class="gallery" id="gallery">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">Photo Gallery</span>
+      <h2>Glimpses of life at SSSACT</h2>
+      <p>Smiles, celebrations, learning and service — a few moments captured from our journey with the children.</p>
+    </div>
+
+    <div class="gal-grid reveal">
+      <button class="gal-item" data-src="images/event1-kannada-1.jpg"><img src="images/event1-kannada-1.jpg" alt="Kannada Rajyotsava celebration" loading="lazy"></button>
+      <button class="gal-item" data-src="images/event2-trip-1.jpg"><img src="images/event2-trip-1.jpg" alt="Children at a historic fort on their trip" loading="lazy"></button>
+      <button class="gal-item" data-src="images/event1-kannada-3.jpg"><img src="images/event1-kannada-3.jpg" alt="Prayer during Kannada Rajyotsava" loading="lazy"></button>
+      <button class="gal-item" data-src="images/event2-trip-2.jpg"><img src="images/event2-trip-2.jpg" alt="Group photo with hills in the background" loading="lazy"></button>
+      <button class="gal-item" data-src="images/event4-aids-1.jpg"><img src="images/event4-aids-1.jpg" alt="World AIDS Day awareness with volunteers" loading="lazy"></button>
+      <button class="gal-item" data-src="images/event3-adoption-1.jpg"><img src="images/event3-adoption-1.jpg" alt="Child adoption awareness outreach" loading="lazy"></button>
+      <button class="gal-item" data-src="images/event2-trip-3.jpg"><img src="images/event2-trip-3.jpg" alt="Children boarding the trip bus with thumbs up" loading="lazy"></button>
+      <button class="gal-item" data-src="images/event1-kannada-2.jpg"><img src="images/event1-kannada-2.jpg" alt="Flag procession on Kannada Rajyotsava" loading="lazy"></button>
+      <button class="gal-item" data-src="images/event4-aids-2.jpg"><img src="images/event4-aids-2.jpg" alt="Volunteers holding awareness posters" loading="lazy"></button>
+      <button class="gal-item" data-src="images/event2-trip-4.jpg"><img src="images/event2-trip-4.jpg" alt="Children resting on fort steps during the trip" loading="lazy"></button>
+      <button class="gal-item" data-src="images/event3-adoption-2.jpg"><img src="images/event3-adoption-2.jpg" alt="Students presenting adoption awareness posters" loading="lazy"></button>
+      <button class="gal-item" data-src="images/event4-aids-3.jpg"><img src="images/event4-aids-3.jpg" alt="Human chain during World AIDS Day drive" loading="lazy"></button>
+      <button class="gal-item" data-src="images/event1-kannada-4.jpg"><img src="images/event1-kannada-4.jpg" alt="Puja setup at the celebration" loading="lazy"></button>
+      <button class="gal-item" data-src="images/event3-adoption-3.jpg"><img src="images/event3-adoption-3.jpg" alt="Awareness interaction with the public" loading="lazy"></button>
+      <button class="gal-item" data-src="images/event4-aids-4.jpg"><img src="images/event4-aids-4.jpg" alt="Group of volunteers at the AIDS awareness event" loading="lazy"></button>
+      <button class="gal-item" data-src="images/event3-adoption-4.jpg"><img src="images/event3-adoption-4.jpg" alt="Volunteers with awareness posters on the street" loading="lazy"></button>
+      <button class="gal-item" data-src="images/event6-yoga-1.jpg"><img src="images/event6-yoga-1.jpg" alt="Children meditating during yoga day" loading="lazy"></button>
+      <button class="gal-item" data-src="images/event5-science-1.jpg"><img src="images/event5-science-1.jpg" alt="Science exhibition model on saving the earth" loading="lazy"></button>
+      <button class="gal-item" data-src="images/event7-art-1.jpg"><img src="images/event7-art-1.jpg" alt="Children displaying their drawings" loading="lazy"></button>
+      <button class="gal-item" data-src="images/event6-yoga-2.jpg"><img src="images/event6-yoga-2.jpg" alt="Children doing headstands at yoga day" loading="lazy"></button>
+      <button class="gal-item" data-src="images/event5-science-2.jpg"><img src="images/event5-science-2.jpg" alt="Student with a Republic Day science project" loading="lazy"></button>
+      <button class="gal-item" data-src="images/event7-art-2.jpg"><img src="images/event7-art-2.jpg" alt="Children with drawings at the art museum" loading="lazy"></button>
+      <button class="gal-item" data-src="images/event6-yoga-3.jpg"><img src="images/event6-yoga-3.jpg" alt="A child in a yoga pose on the mat" loading="lazy"></button>
+      <button class="gal-item" data-src="images/event5-science-3.jpg"><img src="images/event5-science-3.jpg" alt="Students with a human evolution model" loading="lazy"></button>
+      <button class="gal-item" data-src="images/event7-art-3.jpg"><img src="images/event7-art-3.jpg" alt="Children holding artwork by a colourful mural" loading="lazy"></button>
+      <button class="gal-item" data-src="images/event6-yoga-4.jpg"><img src="images/event6-yoga-4.jpg" alt="Group photo of children on an outing" loading="lazy"></button>
+      <button class="gal-item" data-src="images/event5-science-4.jpg"><img src="images/event5-science-4.jpg" alt="Children building a model project" loading="lazy"></button>
+      <button class="gal-item" data-src="images/event7-art-4.jpg"><img src="images/event7-art-4.jpg" alt="Children showing drawings by a tree-of-life mural" loading="lazy"></button>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox overlay (shared) -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lb-close" id="lbClose" aria-label="Close">&times;</button>
+  <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous">&#8249;</button>
+  <img class="lb-img" id="lbImg" src="" alt="">
+  <button class="lb-nav lb-next" id="lbNext" aria-label="Next">&#8250;</button>
+</div>
+
+<!-- ===== DONATE ===== -->
+<section class="donate" id="donate">
+  <div class="wrap">
+    <div class="grid">
+      <div class="copy reveal">
+        <span class="eyebrow">They Need Your Hands</span>
+        <h2>Rupees count — it will save their future</h2>
+        <p>Every contribution, big or small, goes directly toward food, shelter, schooling and care for the children at the Ashrama. Scan the QR code or use the UPI details to donate securely.</p>
+        <ul>
+          <li><span class="tick">✓</span><span>Funds the daily meals, books and shelter of children in our care.</span></li>
+          <li><span class="tick">✓</span><span>Supports girls' higher education and women's livelihood training.</span></li>
+          <li><span class="tick">✓</span><span>Helps run medical camps and community relief work.</span></li>
+        </ul>
+        <a href="#contact" class="btn btn-ghost">Visit the Ashrama →</a>
+      </div>
+
+      <div class="pay-card reveal">
+        <div class="bank">
+          <b>Scan &amp; Pay</b>
+          <span>YONO SBI · UPI</span>
+        </div>
+
+        <!-- QR generated client-side from the UPI string -->
+        <div class="qr" id="qrBox" aria-label="UPI QR code to donate"><svg viewBox="0 0 41 41" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="UPI donation QR code"><rect width="100%" height="100%" fill="#ffffff"/><path d="M2,2H3V3H2zM3,2H4V3H3zM4,2H5V3H4zM5,2H6V3H5zM6,2H7V3H6zM7,2H8V3H7zM8,2H9V3H8zM10,2H11V3H10zM12,2H13V3H12zM13,2H14V3H13zM15,2H16V3H15zM20,2H21V3H20zM21,2H22V3H21zM22,2H23V3H22zM27,2H28V3H27zM28,2H29V3H28zM29,2H30V3H29zM30,2H31V3H30zM32,2H33V3H32zM33,2H34V3H33zM34,2H35V3H34zM35,2H36V3H35zM36,2H37V3H36zM37,2H38V3H37zM38,2H39V3H38zM2,3H3V4H2zM8,3H9V4H8zM11,3H12V4H11zM12,3H13V4H12zM13,3H14V4H13zM15,3H16V4H15zM16,3H17V4H16zM19,3H20V4H19zM20,3H21V4H20zM21,3H22V4H21zM22,3H23V4H22zM26,3H27V4H26zM32,3H33V4H32zM38,3H39V4H38zM2,4H3V5H2zM4,4H5V5H4zM5,4H6V5H5zM6,4H7V5H6zM8,4H9V5H8zM12,4H13V5H12zM14,4H15V5H14zM16,4H17V5H16zM19,4H20V5H19zM21,4H22V5H21zM23,4H24V5H23zM24,4H25V5H24zM25,4H26V5H25zM29,4H30V5H29zM32,4H33V5H32zM34,4H35V5H34zM35,4H36V5H35zM36,4H37V5H36zM38,4H39V5H38zM2,5H3V6H2zM4,5H5V6H4zM5,5H6V6H5zM6,5H7V6H6zM8,5H9V6H8zM10,5H11V6H10zM11,5H12V6H11zM12,5H13V6H12zM13,5H14V6H13zM14,5H15V6H14zM16,5H17V6H16zM17,5H18V6H17zM20,5H21V6H20zM22,5H23V6H22zM23,5H24V6H23zM25,5H26V6H25zM27,5H28V6H27zM29,5H30V6H29zM32,5H33V6H32zM34,5H35V6H34zM35,5H36V6H35zM36,5H37V6H36zM38,5H39V6H38zM2,6H3V7H2zM4,6H5V7H4zM5,6H6V7H5zM6,6H7V7H6zM8,6H9V7H8zM10,6H11V7H10zM11,6H12V7H11zM15,6H16V7H15zM18,6H19V7H18zM19,6H20V7H19zM20,6H21V7H20zM24,6H25V7H24zM29,6H30V7H29zM32,6H33V7H32zM34,6H35V7H34zM35,6H36V7H35zM36,6H37V7H36zM38,6H39V7H38zM2,7H3V8H2zM8,7H9V8H8zM10,7H11V8H10zM12,7H13V8H12zM15,7H16V8H15zM18,7H19V8H18zM19,7H20V8H19zM21,7H22V8H21zM23,7H24V8H23zM26,7H27V8H26zM27,7H28V8H27zM28,7H29V8H28zM32,7H33V8H32zM38,7H39V8H38zM2,8H3V9H2zM3,8H4V9H3zM4,8H5V9H4zM5,8H6V9H5zM6,8H7V9H6zM7,8H8V9H7zM8,8H9V9H8zM10,8H11V9H10zM12,8H13V9H12zM14,8H15V9H14zM16,8H17V9H16zM18,8H19V9H18zM20,8H21V9H20zM22,8H23V9H22zM24,8H25V9H24zM26,8H27V9H26zM28,8H29V9H28zM30,8H31V9H30zM32,8H33V9H32zM33,8H34V9H33zM34,8H35V9H34zM35,8H36V9H35zM36,8H37V9H36zM37,8H38V9H37zM38,8H39V9H38zM10,9H11V10H10zM14,9H15V10H14zM15,9H16V10H15zM18,9H19V10H18zM21,9H22V10H21zM23,9H24V10H23zM25,9H26V10H25zM30,9H31V10H30zM2,10H3V11H2zM6,10H7V11H6zM8,10H9V11H8zM9,10H10V11H9zM10,10H11V11H10zM12,10H13V11H12zM13,10H14V11H13zM15,10H16V11H15zM17,10H18V11H17zM18,10H19V11H18zM21,10H22V11H21zM24,10H25V11H24zM25,10H26V11H25zM30,10H31V11H30zM31,10H32V11H31zM32,10H33V11H32zM33,10H34V11H33zM34,10H35V11H34zM35,10H36V11H35zM38,10H39V11H38zM2,11H3V12H2zM4,11H5V12H4zM5,11H6V12H5zM9,11H10V12H9zM15,11H16V12H15zM16,11H17V12H16zM19,11H20V12H19zM20,11H21V12H20zM21,11H22V12H21zM25,11H26V12H25zM26,11H27V12H26zM28,11H29V12H28zM29,11H30V12H29zM30,11H31V12H30zM33,11H34V12H33zM34,11H35V12H34zM36,11H37V12H36zM3,12H4V13H3zM5,12H6V13H5zM7,12H8V13H7zM8,12H9V13H8zM9,12H10V13H9zM11,12H12V13H11zM13,12H14V13H13zM14,12H15V13H14zM15,12H16V13H15zM16,12H17V13H16zM17,12H18V13H17zM19,12H20V13H19zM24,12H25V13H24zM25,12H26V13H25zM29,12H30V13H29zM31,12H32V13H31zM32,12H33V13H32zM33,12H34V13H33zM36,12H37V13H36zM4,13H5V14H4zM9,13H10V14H9zM10,13H11V14H10zM11,13H12V14H11zM12,13H13V14H12zM13,13H14V14H13zM15,13H16V14H15zM17,13H18V14H17zM18,13H19V14H18zM19,13H20V14H19zM20,13H21V14H20zM21,13H22V14H21zM22,13H23V14H22zM23,13H24V14H23zM29,13H30V14H29zM30,13H31V14H30zM34,13H35V14H34zM35,13H36V14H35zM36,13H37V14H36zM37,13H38V14H37zM2,14H3V15H2zM4,14H5V15H4zM6,14H7V15H6zM7,14H8V15H7zM8,14H9V15H8zM11,14H12V15H11zM15,14H16V15H15zM18,14H19V15H18zM19,14H20V15H19zM20,14H21V15H20zM24,14H25V15H24zM28,14H29V15H28zM30,14H31V15H30zM32,14H33V15H32zM36,14H37V15H36zM38,14H39V15H38zM2,15H3V16H2zM3,15H4V16H3zM4,15H5V16H4zM7,15H8V16H7zM9,15H10V16H9zM13,15H14V16H13zM14,15H15V16H14zM17,15H18V16H17zM18,15H19V16H18zM20,15H21V16H20zM21,15H22V16H21zM23,15H24V16H23zM25,15H26V16H25zM26,15H27V16H26zM27,15H28V16H27zM29,15H30V16H29zM31,15H32V16H31zM34,15H35V16H34zM36,15H37V16H36zM3,16H4V17H3zM5,16H6V17H5zM6,16H7V17H6zM8,16H9V17H8zM14,16H15V17H14zM15,16H16V17H15zM17,16H18V17H17zM19,16H20V17H19zM22,16H23V17H22zM23,16H24V17H23zM24,16H25V17H24zM25,16H26V17H25zM29,16H30V17H29zM33,16H34V17H33zM36,16H37V17H36zM2,17H3V18H2zM3,17H4V18H3zM7,17H8V18H7zM10,17H11V18H10zM11,17H12V18H11zM15,17H16V18H15zM17,17H18V18H17zM18,17H19V18H18zM19,17H20V18H19zM20,17H21V18H20zM22,17H23V18H22zM23,17H24V18H23zM24,17H25V18H24zM28,17H29V18H28zM30,17H31V18H30zM35,17H36V18H35zM36,17H37V18H36zM37,17H38V18H37zM2,18H3V19H2zM5,18H6V19H5zM6,18H7V19H6zM7,18H8V19H7zM8,18H9V19H8zM11,18H12V19H11zM13,18H14V19H13zM15,18H16V19H15zM17,18H18V19H17zM20,18H21V19H20zM22,18H23V19H22zM23,18H24V19H23zM32,18H33V19H32zM33,18H34V19H33zM35,18H36V19H35zM36,18H37V19H36zM37,18H38V19H37zM38,18H39V19H38zM3,19H4V20H3zM4,19H5V20H4zM5,19H6V20H5zM9,19H10V20H9zM12,19H13V20H12zM13,19H14V20H13zM14,19H15V20H14zM16,19H17V20H16zM18,19H19V20H18zM21,19H22V20H21zM25,19H26V20H25zM26,19H27V20H26zM27,19H28V20H27zM28,19H29V20H28zM29,19H30V20H29zM30,19H31V20H30zM31,19H32V20H31zM34,19H35V20H34zM35,19H36V20H35zM37,19H38V20H37zM2,20H3V21H2zM5,20H6V21H5zM6,20H7V21H6zM8,20H9V21H8zM10,20H11V21H10zM12,20H13V21H12zM14,20H15V21H14zM15,20H16V21H15zM18,20H19V21H18zM19,20H20V21H19zM20,20H21V21H20zM22,20H23V21H22zM24,20H25V21H24zM25,20H26V21H25zM26,20H27V21H26zM27,20H28V21H27zM29,20H30V21H29zM30,20H31V21H30zM32,20H33V21H32zM33,20H34V21H33zM36,20H37V21H36zM3,21H4V22H3zM5,21H6V22H5zM6,21H7V22H6zM7,21H8V22H7zM9,21H10V22H9zM12,21H13V22H12zM14,21H15V22H14zM19,21H20V22H19zM20,21H21V22H20zM23,21H24V22H23zM24,21H25V22H24zM25,21H26V22H25zM26,21H27V22H26zM28,21H29V22H28zM32,21H33V22H32zM35,21H36V22H35zM36,21H37V22H36zM4,22H5V23H4zM8,22H9V23H8zM10,22H11V23H10zM11,22H12V23H11zM13,22H14V23H13zM14,22H15V23H14zM15,22H16V23H15zM17,22H18V23H17zM19,22H20V23H19zM20,22H21V23H20zM24,22H25V23H24zM28,22H29V23H28zM29,22H30V23H29zM30,22H31V23H30zM31,22H32V23H31zM32,22H33V23H32zM33,22H34V23H33zM35,22H36V23H35zM36,22H37V23H36zM37,22H38V23H37zM38,22H39V23H38zM2,23H3V24H2zM3,23H4V24H3zM6,23H7V24H6zM10,23H11V24H10zM11,23H12V24H11zM15,23H16V24H15zM17,23H18V24H17zM18,23H19V24H18zM19,23H20V24H19zM22,23H23V24H22zM25,23H26V24H25zM26,23H27V24H26zM29,23H30V24H29zM31,23H32V24H31zM34,23H35V24H34zM36,23H37V24H36zM2,24H3V25H2zM4,24H5V25H4zM5,24H6V25H5zM7,24H8V25H7zM8,24H9V25H8zM9,24H10V25H9zM10,24H11V25H10zM11,24H12V25H11zM15,24H16V25H15zM17,24H18V25H17zM18,24H19V25H18zM20,24H21V25H20zM25,24H26V25H25zM28,24H29V25H28zM29,24H30V25H29zM31,24H32V25H31zM35,24H36V25H35zM2,25H3V26H2zM3,25H4V26H3zM5,25H6V26H5zM9,25H10V26H9zM10,25H11V26H10zM13,25H14V26H13zM14,25H15V26H14zM15,25H16V26H15zM17,25H18V26H17zM18,25H19V26H18zM21,25H22V26H21zM22,25H23V26H22zM23,25H24V26H23zM24,25H25V26H24zM25,25H26V26H25zM29,25H30V26H29zM31,25H32V26H31zM32,25H33V26H32zM35,25H36V26H35zM36,25H37V26H36zM4,26H5V27H4zM7,26H8V27H7zM8,26H9V27H8zM9,26H10V27H9zM10,26H11V27H10zM12,26H13V27H12zM13,26H14V27H13zM16,26H17V27H16zM17,26H18V27H17zM18,26H19V27H18zM22,26H23V27H22zM23,26H24V27H23zM24,26H25V27H24zM26,26H27V27H26zM29,26H30V27H29zM32,26H33V27H32zM33,26H34V27H33zM36,26H37V27H36zM38,26H39V27H38zM2,27H3V28H2zM3,27H4V28H3zM7,27H8V28H7zM11,27H12V28H11zM13,27H14V28H13zM16,27H17V28H16zM20,27H21V28H20zM21,27H22V28H21zM23,27H24V28H23zM25,27H26V28H25zM26,27H27V28H26zM28,27H29V28H28zM29,27H30V28H29zM30,27H31V28H30zM31,27H32V28H31zM34,27H35V28H34zM37,27H38V28H37zM5,28H6V29H5zM6,28H7V29H6zM8,28H9V29H8zM11,28H12V29H11zM13,28H14V29H13zM15,28H16V29H15zM17,28H18V29H17zM22,28H23V29H22zM23,28H24V29H23zM24,28H25V29H24zM25,28H26V29H25zM26,28H27V29H26zM29,28H30V29H29zM31,28H32V29H31zM33,28H34V29H33zM34,28H35V29H34zM35,28H36V29H35zM4,29H5V30H4zM7,29H8V30H7zM9,29H10V30H9zM12,29H13V30H12zM13,29H14V30H13zM15,29H16V30H15zM16,29H17V30H16zM17,29H18V30H17zM18,29H19V30H18zM19,29H20V30H19zM22,29H23V30H22zM23,29H24V30H23zM25,29H26V30H25zM29,29H30V30H29zM30,29H31V30H30zM31,29H32V30H31zM35,29H36V30H35zM36,29H37V30H36zM37,29H38V30H37zM2,30H3V31H2zM3,30H4V31H3zM4,30H5V31H4zM6,30H7V31H6zM8,30H9V31H8zM9,30H10V31H9zM10,30H11V31H10zM11,30H12V31H11zM12,30H13V31H12zM13,30H14V31H13zM15,30H16V31H15zM19,30H20V31H19zM20,30H21V31H20zM22,30H23V31H22zM23,30H24V31H23zM28,30H29V31H28zM30,30H31V31H30zM31,30H32V31H31zM32,30H33V31H32zM33,30H34V31H33zM34,30H35V31H34zM35,30H36V31H35zM36,30H37V31H36zM37,30H38V31H37zM10,31H11V32H10zM11,31H12V32H11zM15,31H16V32H15zM17,31H18V32H17zM18,31H19V32H18zM25,31H26V32H25zM26,31H27V32H26zM27,31H28V32H27zM29,31H30V32H29zM30,31H31V32H30zM34,31H35V32H34zM35,31H36V32H35zM36,31H37V32H36zM2,32H3V33H2zM3,32H4V33H3zM4,32H5V33H4zM5,32H6V33H5zM6,32H7V33H6zM7,32H8V33H7zM8,32H9V33H8zM10,32H11V33H10zM13,32H14V33H13zM14,32H15V33H14zM15,32H16V33H15zM17,32H18V33H17zM19,32H20V33H19zM24,32H25V33H24zM25,32H26V33H25zM26,32H27V33H26zM30,32H31V33H30zM32,32H33V33H32zM34,32H35V33H34zM2,33H3V34H2zM8,33H9V34H8zM11,33H12V34H11zM13,33H14V34H13zM15,33H16V34H15zM16,33H17V34H16zM18,33H19V34H18zM19,33H20V34H19zM20,33H21V34H20zM23,33H24V34H23zM25,33H26V34H25zM28,33H29V34H28zM29,33H30V34H29zM30,33H31V34H30zM34,33H35V34H34zM35,33H36V34H35zM36,33H37V34H36zM37,33H38V34H37zM38,33H39V34H38zM2,34H3V35H2zM4,34H5V35H4zM5,34H6V35H5zM6,34H7V35H6zM8,34H9V35H8zM10,34H11V35H10zM11,34H12V35H11zM12,34H13V35H12zM13,34H14V35H13zM14,34H15V35H14zM16,34H17V35H16zM20,34H21V35H20zM21,34H22V35H21zM23,34H24V35H23zM24,34H25V35H24zM26,34H27V35H26zM30,34H31V35H30zM31,34H32V35H31zM32,34H33V35H32zM33,34H34V35H33zM34,34H35V35H34zM36,34H37V35H36zM38,34H39V35H38zM2,35H3V36H2zM4,35H5V36H4zM5,35H6V36H5zM6,35H7V36H6zM8,35H9V36H8zM11,35H12V36H11zM12,35H13V36H12zM14,35H15V36H14zM15,35H16V36H15zM18,35H19V36H18zM22,35H23V36H22zM24,35H25V36H24zM25,35H26V36H25zM29,35H30V36H29zM31,35H32V36H31zM32,35H33V36H32zM38,35H39V36H38zM2,36H3V37H2zM4,36H5V37H4zM5,36H6V37H5zM6,36H7V37H6zM8,36H9V37H8zM12,36H13V37H12zM14,36H15V37H14zM15,36H16V37H15zM18,36H19V37H18zM19,36H20V37H19zM22,36H23V37H22zM25,36H26V37H25zM26,36H27V37H26zM29,36H30V37H29zM30,36H31V37H30zM31,36H32V37H31zM32,36H33V37H32zM33,36H34V37H33zM35,36H36V37H35zM36,36H37V37H36zM2,37H3V38H2zM8,37H9V38H8zM11,37H12V38H11zM12,37H13V38H12zM13,37H14V38H13zM15,37H16V38H15zM16,37H17V38H16zM19,37H20V38H19zM22,37H23V38H22zM23,37H24V38H23zM24,37H25V38H24zM25,37H26V38H25zM29,37H30V38H29zM30,37H31V38H30zM31,37H32V38H31zM33,37H34V38H33zM34,37H35V38H34zM36,37H37V38H36zM37,37H38V38H37zM2,38H3V39H2zM3,38H4V39H3zM4,38H5V39H4zM5,38H6V39H5zM6,38H7V39H6zM7,38H8V39H7zM8,38H9V39H8zM10,38H11V39H10zM12,38H13V39H12zM13,38H14V39H13zM14,38H15V39H14zM16,38H17V39H16zM17,38H18V39H17zM18,38H19V39H18zM21,38H22V39H21zM23,38H24V39H23zM24,38H25V39H24zM25,38H26V39H25zM28,38H29V39H28zM29,38H30V39H29zM32,38H33V39H32zM35,38H36V39H35zM37,38H38V39H37zM38,38H39V39H38z" fill="#1f1a5e"/></svg></div>
+
+        <div class="pay-row"><span>Merchant</span><b>Sri Shiradi Sai Anathalaya CH</b></div>
+        <div class="pay-row"><span>UPI ID</span><b>32683881028@SBI</b></div>
+        <div class="pay-row"><span>Payment</span><b>Any UPI app · GPay · PhonePe · Paytm</b></div>
+
+        <p class="pay-note">100% of your donation supports the children of SSSACT. 🙏</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow" style="color:var(--saffron)">Get In Touch</span>
+      <h2>Come and see the brightness in our children</h2>
+      <p>Reach out to visit, volunteer or partner with us. We would love to welcome you to the Ashrama.</p>
+    </div>
+    <div class="grid">
+      <div class="cinfo reveal">
+        <div class="row">
+          <div class="ic">📍</div>
+          <div><b>Address</b><p># 1107, 9th Cross, Near Nagasandra Post, HMT Layout, Nagasandra, Bengaluru – 560073.</p></div>
+        </div>
+        <div class="row">
+          <div class="ic">✉️</div>
+          <div><b>Email</b><a href="mailto:sssactb@gmail.com">sssactb@gmail.com</a></div>
+        </div>
+        <div class="row">
+          <div class="ic">🌐</div>
+          <div><b>Website</b><a href="http://www.sssact.org.in" target="_blank" rel="noopener">www.sssact.org.in</a></div>
+        </div>
+        <div class="row">
+          <div class="ic">🪔</div>
+          <div><b>Registration</b><p>Shree Shiradi Sai Anathalaya Charitable Trust (R.) · Regd. No. 4-0002-2012/13</p></div>
+        </div>
+      </div>
+      <div class="map-card reveal">
+        <iframe
+          src="https://www.google.com/maps?q=Nagasandra,HMT+Layout,Bengaluru+560073&output=embed"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="SSSACT location map"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site">
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <div class="brand" style="margin-bottom:6px">
+          <img src="logo.jpeg" alt="SSSACT logo" style="border-radius:10px;background:#fff">
+          <span class="txt"><strong>SSSACT</strong></span>
+        </div>
+        <p class="tag">Shree Shiradi Sai Anathalaya Charitable Trust (R.) — serving children with shelter, education, culture and care since 2012. Om Sai Ram.</p>
+        <div style="margin-top:16px" class="visitor">
+          <span class="pulse"></span>Visitors: <b id="visitCount">…</b>
+        </div>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#programs">Programs</a></li>
+          <li><a href="#events">Events Conducted</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#volunteer">Volunteer</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#donate">Donate</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Reach Us</h4>
+        <ul>
+          <li><a href="mailto:sssactb@gmail.com">sssactb@gmail.com</a></li>
+          <li><a href="http://www.sssact.org.in" target="_blank" rel="noopener">www.sssact.org.in</a></li>
+          <li>Nagasandra, Bengaluru – 560073</li>
+          <li>Regd. No. 4-0002-2012/13</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="yr"></span> Shree Shiradi Sai Anathalaya Charitable Trust (R.). All rights reserved.</span>
+      <span>They need your hands 🤲</span>
+    </div>
+  </div>
+</footer>
+
+<!-- QR code generator (tiny, offline, MIT) -->
+<script>
+  /* ---- year ---- */
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  /* ---- mobile menu ---- */
+  const menuBtn = document.getElementById('menuBtn');
+  const navLinks = document.getElementById('navLinks');
+  menuBtn.addEventListener('click', () => navLinks.classList.toggle('open'));
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+
+  /* ---- smooth-scroll fallback for all in-page anchor links ---- */
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', (e) => {
+      const id = link.getAttribute('href');
+      if (id === '#' || id.length < 2) return;
+      const target = document.querySelector(id);
+      if (!target) return;
+      e.preventDefault();
+      const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      target.scrollIntoView({behavior: reduce ? 'auto' : 'smooth', block: 'start'});
+      history.replaceState(null, '', id); // update URL without a jump
+    });
+  });
+
+  /* ---- scroll reveal ---- */
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+  }, {threshold:0.12});
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  /* ---- UPI QR code is embedded inline as SVG above (no external dependency) ---- */
+
+  /* ============================================================ */
+  /*  VISITOR COUNTER                                             */
+  /*  Uses the free CountAPI service — no signup, no key needed.  */
+  /*  Each unique page load increments the count.                */
+  /* ============================================================ */
+  (function(){
+    const el = document.getElementById('visitCount');
+    // change "sssact-bengaluru" to any unique name you like (your own namespace)
+    const url = "https://api.countapi.xyz/hit/sssact-bengaluru/visits";
+    fetch(url)
+      .then(r => r.json())
+      .then(d => { el.textContent = (d && typeof d.value === 'number') ? d.value.toLocaleString('en-IN') : '—'; })
+      .catch(() => { el.textContent = '—'; });
+  })();
+
+  /* ============================================================ */
+  /*  GALLERY LIGHTBOX                                            */
+  /* ============================================================ */
+  (function(){
+    const items = Array.from(document.querySelectorAll('.gal-item'));
+    if(!items.length) return;
+    const lb = document.getElementById('lightbox');
+    const lbImg = document.getElementById('lbImg');
+    const btnClose = document.getElementById('lbClose');
+    const btnPrev = document.getElementById('lbPrev');
+    const btnNext = document.getElementById('lbNext');
+    let idx = 0;
+    const srcs = items.map(b => b.getAttribute('data-src'));
+    const alts = items.map(b => b.querySelector('img') ? b.querySelector('img').alt : '');
+
+    function show(i){
+      idx = (i + srcs.length) % srcs.length;
+      lbImg.src = srcs[idx];
+      lbImg.alt = alts[idx];
+    }
+    function open(i){ show(i); lb.classList.add('open'); lb.setAttribute('aria-hidden','false'); document.body.style.overflow='hidden'; }
+    function close(){ lb.classList.remove('open'); lb.setAttribute('aria-hidden','true'); document.body.style.overflow=''; }
+
+    items.forEach((b,i) => b.addEventListener('click', () => open(i)));
+    btnClose.addEventListener('click', close);
+    btnPrev.addEventListener('click', (e) => { e.stopPropagation(); show(idx-1); });
+    btnNext.addEventListener('click', (e) => { e.stopPropagation(); show(idx+1); });
+    lb.addEventListener('click', (e) => { if(e.target === lb) close(); });
+    document.addEventListener('keydown', (e) => {
+      if(!lb.classList.contains('open')) return;
+      if(e.key === 'Escape') close();
+      else if(e.key === 'ArrowLeft') show(idx-1);
+      else if(e.key === 'ArrowRight') show(idx+1);
+    });
+  })();
+
+  /* ============================================================ */
+  /*  FORM SUBMISSION (Volunteer + Review)                        */
+  /*  Submits to Formspree via fetch so the visitor stays on the  */
+  /*  page and sees a success message instead of being redirected.*/
+  /* ============================================================ */
+  function wireForm(formId, statusId){
+    const form = document.getElementById(formId);
+    const status = document.getElementById(statusId);
+    if(!form) return;
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      // If the form hasn't been connected yet, tell the owner clearly.
+      if(form.action.includes('YOUR_FORM_ID')){
+        status.className = 'form-status err show';
+        status.textContent = 'This form isn’t connected yet. See SETUP-GUIDE.md to add your free Formspree ID.';
+        return;
+      }
+      const btn = form.querySelector('button[type="submit"]');
+      const original = btn.textContent;
+      btn.textContent = 'Sending…'; btn.disabled = true;
+      try{
+        const res = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { 'Accept': 'application/json' }
+        });
+        if(res.ok){
+          status.className = 'form-status ok show';
+          status.textContent = 'Thank you! Your message has been sent to the SSSACT team. 🙏';
+          form.reset();
+        } else {
+          throw new Error('bad response');
+        }
+      } catch(err){
+        status.className = 'form-status err show';
+        status.textContent = 'Something went wrong. Please email us directly at sssactb@gmail.com.';
+      } finally {
+        btn.textContent = original; btn.disabled = false;
+      }
+    });
+  }
+  wireForm('volForm','volStatus');
+  wireForm('revForm','revStatus');
+</script>
+</body>
+</html>
